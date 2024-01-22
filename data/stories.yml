@@ -29,9 +29,13 @@ stories:
   - intent: deny
   - action: utter_goodbye
 
-- story: sad path 2
+- story: mobile recomendation path 2
   steps:
   - intent: greet
   - action: utter_greet
   - intent: product_detail_initiated
-  - action: utter_goodbye
+  - action: utter_ask_for_product_price
+  - intent: product_price_range
+  - action: utter_ask_for_product_size
+  - intent: product_size_range
+  - action: utter_suggest_product

@@ -9,6 +9,9 @@ intents:
   - mood_unhappy
   - bot_challenge
   - product_detail_initiated
+  - product_price_range
+  - product_size_range
+
 
 responses:
   utter_greet:
@@ -29,6 +32,17 @@ responses:
 
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
+
+  utter_ask_for_product_price:
+    - text: "Hello! Can u provide the price range of the product"
+
+  utter_ask_for_product_size:
+    - text: "Thank you! Can u provide the size of the product"
+
+  utter_suggest_product:
+    - text:  "The product that suits you is 'Redmi'"
+
+
 
 session_config:
   session_expiration_time: 60

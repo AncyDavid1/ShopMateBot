@@ -95,3 +95,13 @@ nlu:
     - can u recommend a mobile
     - can u suggest a mobile
     - i want a mobile
+
+- intent: product_price_range
+  examples: |
+    - i need a mobile for 15000
+    - Rs10000
+
+- intent: product_size_range
+  examples: |
+    - size can be min 13inch
+    - 13inch
